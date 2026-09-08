@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07040f" />
+    <meta name="description" content="Nexus Techfest 2026 — an interactive 3D experience for builders, designers, and innovators." />
+    <title>Nexus Techfest 2026 — Build Beyond</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307040f'/%3E%3Cpath d='M16 45V19l32 26V19' fill='none' stroke='%232ee6ff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header" id="site-header">
+      <a class="logo" href="#hero" aria-label="Nexus Techfest home">NEXUS <span>// TECHFEST 2026</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Toggle navigation</span><span></span><span></span></button>
+      <nav id="primary-nav" aria-label="Primary navigation"><a href="#experience">Experience</a><a href="#tracks">Tracks</a><a href="#schedule">Schedule</a><a href="#details">Details</a></nav>
+      <button class="nav-cta" type="button" data-open-registration>Join the fest</button>
+    </header>
+    <main id="main-content">
+      <section id="hero" aria-labelledby="hero-title">
+        <canvas id="hero-canvas" aria-label="Interactive rotating Nexus core. Drag to rotate it." tabindex="0"></canvas>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">14—16 March 2026 · City Convention Campus</p>
+          <h1 id="hero-title"><span>Build</span> beyond<br />the expected.</h1>
+          <p class="hero-copy">Three days where code, machines, design, and bold ideas collide. Enter the Nexus and turn your prototype into the thing everyone remembers.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#tracks">Explore the arenas</a><button class="button button-ghost" type="button" data-open-registration>Register a team</button></div>
+          <dl class="stats-strip" aria-label="Event highlights"><div><dt>03</dt><dd>Days</dd></div><div><dt>06</dt><dd>Arenas</dd></div><div><dt>2,400+</dt><dd>Builders</dd></div><div><dt>$40K</dt><dd>Prize pool</dd></div></dl>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><span></span>Scroll to enter</div>
+        <p class="drag-cue">Drag the 3D core to change its orbit</p>
+      </section>
+      <section class="experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-kicker reveal">The experience</div>
+        <div class="experience-grid">
+          <div class="experience-copy reveal"><h2 id="experience-title">Not a conference.<br /><em>A collision.</em></h2><p>Follow the energy through six live arenas. The Nexus reacts as you move: drag it, scroll through its orbit, and explore a programme made to reward building over watching.</p></div>
+          <div class="orbit-stage reveal" id="orbit-stage" aria-label="Interactive track constellation">
+            <div class="orbit-ring orbit-ring-one" aria-hidden="true"></div><div class="orbit-ring orbit-ring-two" aria-hidden="true"></div>
+            <button class="orbit-node node-ai is-active" type="button" data-track="AI / ML"><span>AI</span></button><button class="orbit-node node-robotics" type="button" data-track="Robotics"><span>RX</span></button><button class="orbit-node node-design" type="button" data-track="Design"><span>DX</span></button><button class="orbit-node node-security" type="button" data-track="Security"><span>CTF</span></button>
+            <div class="orbit-core"><span id="orbit-label">AI / ML</span><small>Selected arena</small></div>
+          </div>
+        </div>
+      </section>
+      <section class="panel" id="tracks" aria-labelledby="tracks-title">
+        <header class="section-head reveal"><span class="tag">Choose your arena</span><h2 id="tracks-title">Six ways to make an impact.</h2><p>Each arena has its own brief, mentors, judging format, and prize pool.</p></header>
+        <div class="track-grid">
+          <article class="track-card reveal" data-accent="cyan"><span class="track-number">01</span><span class="track-icon" aria-hidden="true">◈</span><p class="track-label">AI / ML · 24 hours</p><h3>Neural Forge</h3><p>Build a working product on real datasets and defend your choices before industry researchers.</p><dl><div><dt>Team</dt><dd>3–4</dd></div><div><dt>Prize</dt><dd>$10K</dd></div></dl></article>
+          <article class="track-card reveal" data-accent="magenta"><span class="track-number">02</span><span class="track-icon" aria-hidden="true">⬡</span><p class="track-label">Robotics · 3 days</p><h3>IronWorks Arena</h3><p>Design, build, and battle autonomous bots through obstacle courses and combat rounds.</p><dl><div><dt>Team</dt><dd>2–5</dd></div><div><dt>Prize</dt><dd>$8K</dd></div></dl></article>
+          <article class="track-card reveal" data-accent="yellow"><span class="track-number">03</span><span class="track-icon" aria-hidden="true">⟷</span><p class="track-label">Web3 · 36 hours</p><h3>ChainReact</h3><p>Ship a useful dApp, smart contract, or on-chain tool and demo it live.</p><dl><div><dt>Team</dt><dd>2–4</dd></div><div><dt>Prize</dt><dd>$7K</dd></div></dl></article>
+          <article class="track-card reveal" data-accent="violet"><span class="track-number">04</span><span class="track-icon" aria-hidden="true">⌁</span><p class="track-label">Game dev · 48 hours</p><h3>PixelStorm</h3><p>Respond to a surprise theme, build in any engine, and put your game on the show floor.</p><dl><div><dt>Team</dt><dd>1–4</dd></div><div><dt>Prize</dt><dd>$6K</dd></div></dl></article>
+          <article class="track-card reveal" data-accent="cyan"><span class="track-number">05</span><span class="track-icon" aria-hidden="true">⌾</span><p class="track-label">Security · 12 hours</p><h3>ZeroDay</h3><p>Capture flags across web, cryptography, reverse engineering, and forensics.</p><dl><div><dt>Team</dt><dd>1–3</dd></div><div><dt>Prize</dt><dd>$5K</dd></div></dl></article>
+          <article class="track-card reveal" data-accent="magenta"><span class="track-number">06</span><span class="track-icon" aria-hidden="true">✦</span><p class="track-label">Product design · 8 hours</p><h3>FormFlux</h3><p>Take a real brief from first sketch to a tested, presentable prototype in one day.</p><dl><div><dt>Team</dt><dd>1–3</dd></div><div><dt>Prize</dt><dd>$4K</dd></div></dl></article>
+        </div>
+      </section>
+      <section class="panel schedule-section" id="schedule" aria-labelledby="schedule-title">
+        <header class="section-head reveal"><span class="tag">The programme</span><h2 id="schedule-title">Three days. No dead air.</h2><p>Switch days to preview the moments you will not want to miss.</p></header>
+        <div class="schedule-shell reveal">
+          <div class="day-tabs" role="tablist" aria-label="Event schedule days">
+            <button id="tab-day-1" class="day-tab active" type="button" role="tab" aria-selected="true" aria-controls="day-1" tabindex="0" data-day="1"><b>Day 01</b><span>Mar 14</span></button><button id="tab-day-2" class="day-tab" type="button" role="tab" aria-selected="false" aria-controls="day-2" tabindex="-1" data-day="2"><b>Day 02</b><span>Mar 15</span></button><button id="tab-day-3" class="day-tab" type="button" role="tab" aria-selected="false" aria-controls="day-3" tabindex="-1" data-day="3"><b>Day 03</b><span>Mar 16</span></button>
+          </div>
+          <div class="timeline">
+            <div class="day-panel active" id="day-1" role="tabpanel" aria-labelledby="tab-day-1" data-day="1">
+              <article><time>09:00</time><div><span>Main auditorium</span><h3>Opening ceremony + keynote</h3><p>The brief, the rules, and one provocation to set the weekend in motion.</p></div></article><article><time>11:00</time><div><span>Innovation hall</span><h3>Neural Forge + ChainReact kickoff</h3><p>Problems drop, teams lock in, and the build clocks start.</p></div></article><article><time>14:00</time><div><span>Robotics pit</span><h3>IronWorks qualifiers</h3><p>Autonomous obstacle runs seed the battle bracket.</p></div></article><article><time>19:00</time><div><span>Courtyard</span><h3>Builder mixer</h3><p>Meet mentors, sponsors, and the teams working beside you.</p></div></article>
+            </div>
+            <div class="day-panel" id="day-2" role="tabpanel" aria-labelledby="tab-day-2" data-day="2" hidden>
+              <article><time>09:00</time><div><span>Design studio</span><h3>FormFlux begins</h3><p>Receive the brief and turn raw research into a tested product story.</p></div></article><article><time>10:00</time><div><span>Security lab</span><h3>ZeroDay CTF</h3><p>Twelve hours, four categories, one live leaderboard.</p></div></article><article><time>13:00</time><div><span>Innovation hall</span><h3>PixelStorm theme reveal</h3><p>The secret prompt lands and the 48-hour jam opens.</p></div></article><article><time>17:00</time><div><span>Robotics pit</span><h3>IronWorks combat finals</h3><p>Head-to-head machines take over the main arena.</p></div></article>
+            </div>
+            <div class="day-panel" id="day-3" role="tabpanel" aria-labelledby="tab-day-3" data-day="3" hidden>
+              <article><time>10:00</time><div><span>Innovation hall</span><h3>ChainReact + ZeroDay demos</h3><p>Finalists explain the thinking behind their strongest builds.</p></div></article><article><time>12:00</time><div><span>Exhibit hall</span><h3>PixelStorm showcase</h3><p>Play the finished games and meet their makers.</p></div></article><article><time>15:00</time><div><span>Main auditorium</span><h3>Grand finale judging</h3><p>Final reviews across all six arenas.</p></div></article><article><time>18:00</time><div><span>Main auditorium</span><h3>Closing + prize ceremony</h3><p>Winners announced, experiments celebrated, Nexus complete.</p></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="panel details-section" id="details" aria-labelledby="details-title">
+        <header class="section-head reveal"><span class="tag">Before you arrive</span><h2 id="details-title">Everything you need. Nothing hidden.</h2></header>
+        <div class="details-grid"><details class="reveal"><summary>Who can participate?</summary><p>Students, recent graduates, and independent builders may enter. Teams can include members from different institutions.</p></details><details class="reveal"><summary>What should I bring?</summary><p>Your laptop, charger, student or government ID, and any approved hardware required for your arena.</p></details><details class="reveal"><summary>Is the event free?</summary><p>Registration is free. Shortlisted teams receive full venue access for all three days.</p></details><details class="reveal"><summary>Where is the venue?</summary><p>City Convention Campus. Exact gate, travel guidance, and check-in instructions are included in the confirmation message.</p></details></div>
+      </section>
+      <section class="final-cta" aria-labelledby="final-cta-title"><div class="cta-orb" aria-hidden="true"></div><p class="tag">Applications open</p><h2 id="final-cta-title">Bring the idea.<br />Leave with proof.</h2><p>Choose an arena, assemble your team, and reserve your place at Nexus Techfest 2026.</p><button class="button button-primary" type="button" data-open-registration>Register your team</button></section>
+    </main>
+    <footer><a class="logo" href="#hero">NEXUS <span>// TECHFEST</span></a><p>14—16 March 2026 · City Convention Campus</p><a href="mailto:hello@nexustechfest.example">hello@nexustechfest.example</a><span>© 2026 Nexus Techfest</span></footer>
+    <dialog class="registration-dialog" id="registration-dialog" aria-labelledby="registration-title">
+      <form id="registration-form" novalidate>
+        <button class="dialog-close" type="button" aria-label="Close registration form">×</button><p class="tag">Team registration</p><h2 id="registration-title">Enter the Nexus.</h2><p class="dialog-intro">This demo stores your draft only on this device. No data is sent to a server.</p>
+        <div class="form-grid"><label>Team name<input name="teamName" type="text" autocomplete="organization" maxlength="60" required /><span class="field-error"></span></label><label>Team lead<input name="leadName" type="text" autocomplete="name" maxlength="80" required /><span class="field-error"></span></label><label>Email<input name="email" type="email" autocomplete="email" maxlength="120" required /><span class="field-error"></span></label><label>Team size<select name="teamSize" required><option value="">Choose size</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select><span class="field-error"></span></label><label class="form-wide">Arena<select name="track" required><option value="">Choose an arena</option><option>Neural Forge</option><option>IronWorks Arena</option><option>ChainReact</option><option>PixelStorm</option><option>ZeroDay</option><option>FormFlux</option></select><span class="field-error"></span></label></div>
+        <label class="consent"><input name="consent" type="checkbox" required /><span>I confirm that the information above is accurate.</span></label><span class="field-error consent-error"></span><button class="button button-primary submit-button" type="submit">Save registration</button><p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
