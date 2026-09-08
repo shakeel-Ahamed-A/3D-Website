@@ -4,7 +4,7 @@ An immersive 3D interactive website created for the Techfest problem statement.
 
 ## Live Website
 
-[Open the live Nexus Techfest website](https://shakeel-ahamed-a.github.io/3D-Website/)
+![Nexus Techfest homepage](docs/screenshots/homepage.png)
 
 ## Preview
 
