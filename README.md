@@ -8,7 +8,7 @@ An immersive 3D interactive website created for the Techfest problem statement.
 
 ## Preview
 
-![Nexus Techfest homepage](docs/screenshots/homepage.png)
+![Nexus Techfest homepage]![Uploading image.png…]()
 
 ## Problem Statement
 
